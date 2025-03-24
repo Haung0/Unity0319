@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class Hp : MonoBehaviour
 {
-    public int maxHp;
-    public int currentHp;
+    public int maxHp = 10;  
+    public int currentHp;  
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHp = maxHp;
+        currentHp = maxHp;  
     }
 
-    public void Damge(int damge)
+  
+    public void Damage(int damage)
     {
-        currentHp -= damge;
+        Debug.Log("-");
+        currentHp -= damage;  
         if (currentHp <= 0)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false);  
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 }

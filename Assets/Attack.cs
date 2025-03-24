@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public int damage = 10;
+    public int damage = 2;
     private float attackRange = 5f;
     public LayerMask enemyLayer;
     public Camera cam;
@@ -26,7 +26,7 @@ public class Attack : MonoBehaviour
             {
                 Hp enemyHp = hit.collider.GetComponent<Hp>();
                 Debug.Log("Attack Enemy");
-                enemyHp.Damge(damage);
+                enemyHp.Damage(damage);
             }
             lastAttack = Time.time; 
         }
@@ -41,6 +41,7 @@ public class Attack : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Enemy"))
                 {
+                    Debug.Log("dd");
                     AttackSystem();
                 }
                

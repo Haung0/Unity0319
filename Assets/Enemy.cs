@@ -14,19 +14,19 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       agent = GetComponent<NavMeshAgent>();    
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distancePlaer =
-            Vector3.Distance(transform.position, player.position); 
+        float distancePlaer = Vector3.Distance
+            (this.transform.position, player.transform.position);
         if (distancePlaer < detectionRange)
         {
-            agent.SetDestination(player.position); 
+            agent.SetDestination(player.position);
 
         }
-   
+
     }
 }

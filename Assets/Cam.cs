@@ -7,7 +7,7 @@ public class Cam : MonoBehaviour
 {
     public GameObject player;
     private Camera cam;
-    private float mouseSpeed = 2500f;
+    private float mouseSpeed = 3000f;
     private float xrot;
     private float yrot;
 

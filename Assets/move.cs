@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private int speed = 10;
-    public int jump = 20;
+    private int speed = 15;
+    public int jump = 5;
     public int jumpCnt = 0;
 
     private Vector3 movement;
